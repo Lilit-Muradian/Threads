@@ -118,6 +118,7 @@ void* encode1(void* arg) {
         fflush(files->file2);
     }
     fFor2 = 0;
+    free(buff);
     return NULL;
 }
 
@@ -134,6 +135,7 @@ void* encode2(void* arg) {
         fflush(files->file2);
     } 
     fFor3 = 0;
+    free(buff);
     return NULL;
 }
 
@@ -151,6 +153,7 @@ void* decode1(void* arg) {
         fflush(files->file2);
     } 
     fFor4 = 0;
+    free(buff);
     return NULL;
 }
 
@@ -167,6 +170,7 @@ void* decode2(void* arg) {
         fputs(buff, files->file2);
         fflush(files->file2);
     }
+    free(buff);
     return NULL;
 }
 
