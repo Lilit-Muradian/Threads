@@ -1,2 +1,2 @@
-# c_tasks
+# Threads
 Files and inter-process communication
